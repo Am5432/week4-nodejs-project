@@ -1,10 +1,10 @@
+
 function readFile(callback) {
   setTimeout(() => {
     callback("Finished reading file.");
   }, 1000);
 }
 
-// Promisify the callback
 function readFilePromise() {
   return new Promise(resolve => {
     readFile(result => {
